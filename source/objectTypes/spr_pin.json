@@ -1,0 +1,91 @@
+{
+	"name": "spr_pin",
+	"plugin-id": "Sprite",
+	"sid": 568433886465949,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "row",
+			"type": "number",
+			"desc": "",
+			"sid": 864859621808313
+		},
+		{
+			"name": "col",
+			"type": "number",
+			"desc": "",
+			"sid": 341276758702739
+		},
+		{
+			"name": "right",
+			"type": "number",
+			"desc": "",
+			"sid": 522764314543235
+		},
+		{
+			"name": "up",
+			"type": "number",
+			"desc": "",
+			"sid": 437744086902477
+		},
+		{
+			"name": "left",
+			"type": "number",
+			"desc": "",
+			"sid": 215585665595884
+		},
+		{
+			"name": "down",
+			"type": "number",
+			"desc": "",
+			"sid": 153801505245418
+		},
+		{
+			"name": "current",
+			"type": "boolean",
+			"desc": "",
+			"sid": 918338434110988
+		},
+		{
+			"name": "selected",
+			"type": "boolean",
+			"desc": "",
+			"sid": 566184871627169
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "setcolor",
+			"name": "SetColor"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 103,
+						"height": 103,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 281380,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 807624510056965,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

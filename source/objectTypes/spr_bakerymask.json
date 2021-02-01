@@ -1,0 +1,57 @@
+{
+	"name": "spr_bakeryMask",
+	"plugin-id": "Sprite",
+	"sid": 966158452341338,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1739,
+						"height": 1039,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4795317,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9994791666666667,
+								0,
+								0.9994791666666667,
+								0.5,
+								0.9994791666666667,
+								0.9990740740740741,
+								0.5,
+								0.9990740740740741,
+								0,
+								0.9990740740740741,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 171082132920335,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

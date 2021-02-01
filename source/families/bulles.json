@@ -1,0 +1,27 @@
+{
+	"name": "bulles",
+	"plugin-id": "Sprite",
+	"sid": 149515781682003,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 684097305911394
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"spr_bulleWelcome",
+		"spr_bulleBadBread",
+		"spr_bulleGoodBread",
+		"spr_bulleEnd4",
+		"spr_bulleEnd3",
+		"spr_bulleEnd2",
+		"spr_bulleEnd1",
+		"spr_bulleBadEnding1",
+		"spr_bulleBadEnding2",
+		"spr_bulleBadEnding3",
+		"spr_bulleBadEnding4"
+	]
+}

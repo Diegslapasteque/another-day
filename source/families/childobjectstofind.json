@@ -1,0 +1,26 @@
+{
+	"name": "childObjectsToFind",
+	"plugin-id": "Sprite",
+	"sid": 405525334801183,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 815439539028765
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 471611607621950
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"spr_toFind1",
+		"spr_toFind2",
+		"spr_toFind3",
+		"spr_toFind5",
+		"spr_toFind4"
+	]
+}

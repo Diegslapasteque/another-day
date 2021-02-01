@@ -1,0 +1,33 @@
+{
+	"name": "backery",
+	"plugin-id": "Sprite",
+	"sid": 100041457081044,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 380125221943323
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "blurvertical",
+			"name": "BlurVertical"
+		},
+		{
+			"effectId": "blurhorizontal",
+			"name": "BlurHorizontal"
+		}
+	],
+	"members": [
+		"spr_bread5",
+		"spr_bread4",
+		"spr_bread3",
+		"spr_bread2",
+		"spr_bread",
+		"spr_bakery",
+		"spr_bread6",
+		"spr_bakeryMask"
+	]
+}

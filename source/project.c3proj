@@ -1,0 +1,516 @@
+{
+	"projectFormatVersion": 1,
+	"savedWithRelease": 22500,
+	"name": "Another Day",
+	"runtime": "c3",
+	"useWorker": "auto",
+	"bundleAddons": false,
+	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "video",
+			"name": "Video",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "Mouse",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "AJAX",
+			"name": "AJAX",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Arr",
+			"name": "Array",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "inverse",
+			"name": "Inverse",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurhorizontal",
+			"name": "Blur horizontal",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "blurvertical",
+			"name": "Blur vertical",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "setcolor",
+			"name": "Set color",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "multiply",
+			"name": "Multiply",
+			"author": "Scirra",
+			"version": "r225",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "skymen_BetterOutline",
+			"name": "BetterOutline",
+			"author": "skymen",
+			"version": "1.4.0.0",
+			"bundled": false
+		}
+	],
+	"uniqueId": "byfwh6q1jqt",
+	"objectTypes": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"spr_toFind1",
+					"spr_bedroom",
+					"spr_toFind2",
+					"spr_toFind3",
+					"video_eyeOpen",
+					"video_eyeBlink",
+					"video_eyeClose",
+					"spr_toFind4",
+					"spr_toFind5"
+				],
+				"subfolders": [],
+				"name": "Scene1"
+			},
+			{
+				"items": [
+					"bg_loading",
+					"mouse",
+					"bg_black",
+					"spr_handpostit",
+					"bg_white",
+					"AJAX",
+					"bg_grey",
+					"spr_title",
+					"audio",
+					"spr_handphone",
+					"tween"
+				],
+				"subfolders": [],
+				"name": "Global"
+			},
+			{
+				"items": [
+					"bg_abstract",
+					"spr_oldman",
+					"spr_map",
+					"spr_oldmanEyesClosed"
+				],
+				"subfolders": [],
+				"name": "Scene2"
+			},
+			{
+				"items": [
+					"spr_bakery",
+					"spr_bread",
+					"spr_bread2",
+					"spr_bread3",
+					"spr_bread4",
+					"spr_bread5",
+					"spr_bread6",
+					"spr_bakeryMask"
+				],
+				"subfolders": [
+					{
+						"items": [
+							"spr_bulleWelcome",
+							"spr_bulleBadBread",
+							"spr_bulleEnd1",
+							"spr_bulleEnd2",
+							"spr_bulleEnd3",
+							"spr_bulleEnd4",
+							"spr_bulleGoodBread"
+						],
+						"subfolders": [],
+						"name": "dialogues"
+					}
+				],
+				"name": "Scene3"
+			},
+			{
+				"items": [
+					"bg_mapInteractive",
+					"spr_pin",
+					"spr_arrowRight",
+					"spr_arrowLeft",
+					"spr_arrowUp",
+					"spr_arrowDown",
+					"spr_path",
+					"arr_playerPath",
+					"arr_solutionPath",
+					"spr_buttonBackHome"
+				],
+				"subfolders": [],
+				"name": "Scene4"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "SceneFinal"
+			},
+			{
+				"items": [],
+				"subfolders": [],
+				"name": "Scene5_goodEnding"
+			},
+			{
+				"items": [
+					"spr_lightRed",
+					"spr_lightBlue",
+					"spr_bulleBadEnding1",
+					"spr_bulleBadEnding2",
+					"spr_bulleBadEnding3",
+					"spr_bulleBadEnding4"
+				],
+				"subfolders": [],
+				"name": "Scene6_badEnding"
+			}
+		]
+	},
+	"autosaveData": {
+		"mode": "webfs-local-folder",
+		"name": "another-day/"
+	},
+	"containers": [],
+	"families": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"childObjectsToFind",
+					"eyeVideos",
+					"bedroom"
+				],
+				"subfolders": [],
+				"name": "Scene1"
+			},
+			{
+				"items": [
+					"bread",
+					"badBreads",
+					"goodBread",
+					"backery",
+					"bulles"
+				],
+				"subfolders": [],
+				"name": "Scene3"
+			},
+			{
+				"items": [
+					"arrows"
+				],
+				"subfolders": [],
+				"name": "Scene4"
+			},
+			{
+				"items": [
+					"police"
+				],
+				"subfolders": [],
+				"name": "Scene6_badEnding"
+			}
+		]
+	},
+	"layouts": {
+		"items": [
+			"Scene1",
+			"Scene2",
+			"Scene3",
+			"Scene4",
+			"Assets",
+			"Scene5_goodEnding",
+			"Scene6_badEnding",
+			"SceneFinal"
+		],
+		"subfolders": []
+	},
+	"eventSheets": {
+		"items": [
+			"Scene1_events",
+			"Scene2_events",
+			"Scene3_events",
+			"Scene4_events",
+			"Scene5_events",
+			"Scene6_events",
+			"SceneFinal_events"
+		],
+		"subfolders": []
+	},
+	"rootFileFolders": {
+		"script": {
+			"items": [],
+			"subfolders": []
+		},
+		"sound": {
+			"items": [
+				{
+					"name": "door.mp3",
+					"type": "audio/mpeg",
+					"sid": 861906666625180
+				},
+				{
+					"name": "phoneVibrate.mp3",
+					"type": "audio/mpeg",
+					"sid": 427426750754360
+				},
+				{
+					"name": "city.mp3",
+					"type": "audio/mpeg",
+					"sid": 669001085497421
+				},
+				{
+					"name": "piano.mp3",
+					"type": "audio/mpeg",
+					"sid": 898075054068700
+				},
+				{
+					"name": "room.mp3",
+					"type": "audio/mpeg",
+					"sid": 313686180523241
+				},
+				{
+					"name": "city-calm.mp3",
+					"type": "audio/mpeg",
+					"sid": 485911989571863
+				},
+				{
+					"name": "bakery.mp3",
+					"type": "audio/mpeg",
+					"sid": 843557608240852
+				}
+			],
+			"subfolders": []
+		},
+		"music": {
+			"items": [],
+			"subfolders": []
+		},
+		"video": {
+			"items": [
+				{
+					"name": "eyeBlink.mp4",
+					"type": "video/mp4",
+					"sid": 751603174764330
+				},
+				{
+					"name": "eyeClose.mp4",
+					"type": "video/mp4",
+					"sid": 730502036526387
+				},
+				{
+					"name": "eyeOpen.mp4",
+					"type": "video/mp4",
+					"sid": 489866416710267
+				}
+			],
+			"subfolders": []
+		},
+		"font": {
+			"items": [],
+			"subfolders": []
+		},
+		"icon": {
+			"items": [
+				{
+					"name": "loading-logo.png",
+					"type": "image/png",
+					"sid": 286867345206257,
+					"icon-info": {
+						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icon-64.png",
+					"type": "image/png",
+					"sid": 897756189758303,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-32.png",
+					"type": "image/png",
+					"sid": 415568458176617,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-256.png",
+					"type": "image/png",
+					"sid": 163639322058549,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-16.png",
+					"type": "image/png",
+					"sid": 998248614398691,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-512.png",
+					"type": "image/png",
+					"sid": 839425358654691,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icon-128.png",
+					"type": "image/png",
+					"sid": 110056142145195,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				}
+			],
+			"subfolders": []
+		},
+		"general": {
+			"items": [
+				{
+					"name": "solutionPath.json",
+					"type": "application/json",
+					"sid": 856862320781134
+				}
+			],
+			"subfolders": []
+		}
+	},
+	"timelines": {
+		"items": [],
+		"subfolders": [
+			{
+				"items": [],
+				"subfolders": []
+			}
+		]
+	},
+	"properties": {
+		"description": "",
+		"version": "1.0.0.0",
+		"author": "Diego Sinclair",
+		"authorEmail": "diego.sinclair@outlook.com",
+		"authorWebsite": "https://www.diego-sinclair.fr",
+		"appId": "",
+		"pixelRounding": false,
+		"useLoaderLayout": false,
+		"fullscreenMode": "letterbox-scale",
+		"fullscreenQuality": "high",
+		"viewportFit": "auto",
+		"backgroundColor": [
+			0,
+			0,
+			0,
+			0
+		],
+		"splashColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useThemeColor": false,
+		"themeColor": [
+			1,
+			1,
+			1,
+			0
+		],
+		"useHighDpi": true,
+		"orientations": "landscape",
+		"enableWebGL": true,
+		"gpuPreference": "high-performance",
+		"framerateMode": "vsync",
+		"compositingMode": "standard",
+		"sampling": "trilinear",
+		"downscaling": "medium",
+		"maxSpriteSheetSize": 2048,
+		"loaderStyle": "splash",
+		"preloadSounds": true,
+		"clearBackground": true,
+		"enhancedAccelerationPrecision": true,
+		"cordovaiOSScheme": "app"
+	},
+	"viewportWidth": 1920,
+	"viewportHeight": 1080,
+	"firstLayout": "Scene1"
+}

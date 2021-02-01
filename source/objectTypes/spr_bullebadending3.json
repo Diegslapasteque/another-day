@@ -1,0 +1,57 @@
+{
+	"name": "spr_bulleBadEnding3",
+	"plugin-id": "Sprite",
+	"sid": 199678837730473,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 704,
+						"height": 408,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3188614,
+						"collisionPoly": {
+							"points": [
+								0.11931818181818182,
+								0.20588235294117646,
+								0.5,
+								0.041666666666666664,
+								0.8309659090909091,
+								0.28921568627450983,
+								0.9829545454545454,
+								0.5,
+								0.84375,
+								0.7303921568627451,
+								0.5,
+								0.9607843137254902,
+								0.09090909090909091,
+								0.8406862745098039,
+								0.015625,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 296449902791977,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

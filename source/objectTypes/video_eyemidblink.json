@@ -1,0 +1,14 @@
+{
+	"name": "video_eyeMidBlink",
+	"plugin-id": "video",
+	"sid": 935644715860299,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "inverse",
+			"name": "Inverse"
+		}
+	]
+}

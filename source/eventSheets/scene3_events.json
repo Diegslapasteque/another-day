@@ -1,0 +1,1168 @@
+{
+	"name": "Scene3_events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "bread_clickable",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 436936201277238
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 678962957132046
+				}
+			],
+			"actions": [
+				{
+					"id": "set-tweens-ease",
+					"objectClass": "bulles",
+					"sid": 421282362031993,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"show\"",
+						"ease": "easeoutback"
+					}
+				},
+				{
+					"id": "set-tweens-ease",
+					"objectClass": "bulles",
+					"sid": 886170586932838,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"hide\"",
+						"ease": "easeinsine"
+					}
+				},
+				{
+					"id": "tween-value",
+					"objectClass": "tween",
+					"sid": 668191371958982,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume\"",
+						"start-value": "-20",
+						"end-value": "5",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 267859001264629,
+					"parameters": {
+						"audio-file": "bakery",
+						"loop": "looping",
+						"volume": "tween.Tween.Value(\"volume\")",
+						"tag-optional": "\"bakery\""
+					}
+				}
+			],
+			"sid": 296606882833372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "tween",
+					"sid": 783633373619303,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-volume",
+					"objectClass": "audio",
+					"sid": 760324392207646,
+					"parameters": {
+						"tag": "\"bakery\"",
+						"db": "tween.Tween.Value(\"volume\")"
+					}
+				}
+			],
+			"sid": 217019692277479
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Welcome",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-out-finished",
+							"objectClass": "bg_black",
+							"sid": 939755477575033,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleWelcome",
+							"sid": 976547927990208,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1616",
+								"end-y": "457",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleWelcome",
+							"sid": 799986751730352,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "565",
+								"end-y": "430",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 863911492947665
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleWelcome",
+							"sid": 307786969341824,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 793368526992254,
+							"parameters": {
+								"seconds": "4"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_bulleWelcome",
+							"sid": 865422439291537,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 550341360703471
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleWelcome",
+							"sid": 643990912504798,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 942270456366751,
+							"parameters": {
+								"variable": "bread_clickable",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 234883404545890
+				}
+			],
+			"sid": 831176858123613
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "cursor-is-over-object",
+					"objectClass": "mouse",
+					"sid": 979143453158462,
+					"parameters": {
+						"object": "bread"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 392982395608164,
+					"parameters": {
+						"variable": "bread_clickable"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "mouse",
+					"sid": 872163373811103,
+					"parameters": {
+						"cursor-style": "hand"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Outline width"
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "bread",
+					"sid": 120817099027454,
+					"parameters": {
+						"effect": "\"BetterOutline\"",
+						"parameter-index": "1",
+						"value": "5"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Outline precision step"
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "bread",
+					"sid": 436979722726592,
+					"parameters": {
+						"effect": "\"BetterOutline\"",
+						"parameter-index": "3",
+						"value": "16"
+					}
+				}
+			],
+			"sid": 822158222746512
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "else",
+					"objectClass": "System",
+					"sid": 209315909825979
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-style",
+					"objectClass": "mouse",
+					"sid": 506076350118661,
+					"parameters": {
+						"cursor-style": "normal"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "Remove outline"
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "bread",
+					"sid": 663496482777577,
+					"parameters": {
+						"effect": "\"BetterOutline\"",
+						"parameter-index": "1",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "bread",
+					"sid": 862661391273679,
+					"parameters": {
+						"effect": "\"BetterOutline\"",
+						"parameter-index": "3",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 134631157205515
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Click good bread",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "mouse",
+							"sid": 795785613878085,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "goodBread"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 166601405866767,
+							"parameters": {
+								"variable": "bread_clickable"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 809605257303985,
+							"parameters": {
+								"variable": "bread_clickable",
+								"value": "false"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "goodBread",
+							"sid": 170010381250256,
+							"behaviorType": "TweenGoodBread",
+							"parameters": {
+								"tags": "\"\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "yes",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleGoodBread",
+							"sid": 423419158069203,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1616",
+								"end-y": "457",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleGoodBread",
+							"sid": 957163356911913,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "565",
+								"end-y": "430",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 244819686368411
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleGoodBread",
+							"sid": 615550116748018,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 319435226360962,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_bulleGoodBread",
+							"sid": 673738785294910,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 497202912437319,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd1",
+							"sid": 975144266154463,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1617",
+								"end-y": "562",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd1",
+							"sid": 463977914857398,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "462",
+								"end-y": "161",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 353599480691765
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleEnd1",
+							"sid": 431549684605082,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 387913314117635,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_bulleEnd1",
+							"sid": 531179283817523,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 466377240986497,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd2",
+							"sid": 356567065145324,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1616",
+								"end-y": "457",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd2",
+							"sid": 821691869759671,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "565",
+								"end-y": "430",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 582896497164624
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleEnd2",
+							"sid": 377625570584764,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 304114938299036,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_bulleEnd2",
+							"sid": 446350090853371,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 822742618377287,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd3",
+							"sid": 750519326703731,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1616",
+								"end-y": "457",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd3",
+							"sid": 330855092089004,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "565",
+								"end-y": "430",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 816058565874382
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleEnd3",
+							"sid": 190570539423574,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 393354789147962,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_bulleEnd3",
+							"sid": 975145951190226,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 978186418568016,
+							"parameters": {
+								"seconds": "0.5"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd4",
+							"sid": 301715568239297,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1616",
+								"end-y": "457",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleEnd4",
+							"sid": 417315434449478,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "565",
+								"end-y": "430",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 213982759329302
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleEnd4",
+							"sid": 772369119285929,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 648709347607697,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "tween-value",
+							"objectClass": "tween",
+							"sid": 196466324141047,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"volume\"",
+								"start-value": "5",
+								"end-value": "-20",
+								"time": "2",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "set-fade-in-time",
+							"objectClass": "bg_black",
+							"sid": 356068721458083,
+							"behaviorType": "Fade",
+							"parameters": {
+								"fade-in-time": "2"
+							}
+						},
+						{
+							"id": "restart-fade",
+							"objectClass": "bg_black",
+							"sid": 401891466618577,
+							"behaviorType": "Fade"
+						}
+					],
+					"sid": 609168501686735
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-fade-in-finished",
+							"objectClass": "bg_black",
+							"sid": 185970480528487,
+							"behaviorType": "Fade"
+						}
+					],
+					"actions": [
+						{
+							"id": "stop",
+							"objectClass": "audio",
+							"sid": 230429828310701,
+							"parameters": {
+								"tag": "\"bakery\""
+							}
+						},
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 859234878793932,
+							"parameters": {
+								"layout": "Scene4"
+							}
+						}
+					],
+					"sid": 841117398447230
+				}
+			],
+			"sid": 707373495113105
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Click bad bread",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-object-clicked",
+							"objectClass": "mouse",
+							"sid": 792125639411764,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked",
+								"object-clicked": "badBreads"
+							}
+						},
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 112608435565747,
+							"parameters": {
+								"variable": "bread_clickable"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 728662552986831,
+							"parameters": {
+								"variable": "bread_clickable",
+								"value": "false"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleBadBread",
+							"sid": 687789977800580,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "position",
+								"end-x": "1616",
+								"end-y": "457",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_bulleBadBread",
+							"sid": 272043099145761,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\"",
+								"property": "size",
+								"end-x": "565",
+								"end-y": "430",
+								"time": "0.8",
+								"ease": "easeoutback",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 881846668020159
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleBadBread",
+							"sid": 672598751044131,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"show\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 798363710173720,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_bulleBadBread",
+							"sid": 165692995635621,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\"",
+								"property": "offsetOpacity",
+								"end-value": "0",
+								"time": "0.5",
+								"ease": "easeinsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 829041853616282
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_bulleBadBread",
+							"sid": 516981970692077,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hide\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_handpostit",
+							"sid": 805718866745837,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hand_appear\"",
+								"property": "position",
+								"end-x": "1173",
+								"end-y": "711",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_handpostit",
+							"sid": 129104587031178,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hand_appear\"",
+								"property": "offsetAngle",
+								"end-value": "10",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-value",
+							"objectClass": "backery",
+							"sid": 837914982411222,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"backery_blur backery_blur_appear\"",
+								"start-value": "0",
+								"end-value": "100",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 403146408238860
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-playing",
+							"objectClass": "backery",
+							"sid": 819248457485048,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"backery_blur\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "backery",
+							"sid": 764686431162123,
+							"parameters": {
+								"effect": "\"BlurHorizontal\"",
+								"parameter-index": "0",
+								"value": "backery.Tween.Value(\"backery_blur\")"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "backery",
+							"sid": 582909613131734,
+							"parameters": {
+								"effect": "\"BlurVertical\"",
+								"parameter-index": "0",
+								"value": "backery.Tween.Value(\"backery_blur\")"
+							}
+						}
+					],
+					"sid": 385385660708701
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_handpostit",
+							"sid": 338141748339019,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hand_appear\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 693538765257489,
+							"parameters": {
+								"seconds": "2.5"
+							}
+						},
+						{
+							"id": "tween-two-properties",
+							"objectClass": "spr_handpostit",
+							"sid": 238603687617233,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hand_disappear\"",
+								"property": "position",
+								"end-x": "771",
+								"end-y": "1489",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-one-property",
+							"objectClass": "spr_handpostit",
+							"sid": 650579658313623,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hand_disappear\"",
+								"property": "offsetAngle",
+								"end-value": "-10",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						},
+						{
+							"id": "tween-value",
+							"objectClass": "backery",
+							"sid": 919962586914809,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"backery_blur backery_blur_disappear\"",
+								"start-value": "100",
+								"end-value": "0",
+								"time": "1.5",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 545601207465958
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-tweens-finished",
+							"objectClass": "spr_handpostit",
+							"sid": 785698531326749,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"hand_disappear\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 997112831469046,
+							"parameters": {
+								"variable": "bread_clickable",
+								"value": "true"
+							}
+						}
+					],
+					"sid": 871254523892620
+				}
+			],
+			"sid": 628202511383084
+		}
+	],
+	"sid": 374721561149247
+}

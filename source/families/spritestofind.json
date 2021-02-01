@@ -1,0 +1,19 @@
+{
+	"name": "spritesToFind",
+	"plugin-id": "Sprite",
+	"sid": 405525334801183,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 815439539028765
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"spr_toFind1",
+		"spr_toFind2",
+		"spr_toFind3"
+	]
+}

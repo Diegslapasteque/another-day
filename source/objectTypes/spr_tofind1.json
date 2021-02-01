@@ -1,0 +1,53 @@
+{
+	"name": "spr_toFind1",
+	"plugin-id": "Sprite",
+	"sid": 674148934490848,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 70,
+						"height": 90,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 515009,
+						"collisionPoly": {
+							"points": [
+								0.6428571428571427,
+								0,
+								1,
+								0.06984126984126987,
+								0.8734693877551014,
+								0.5396825396825395,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0.5000000000000008
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 261134793549819,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

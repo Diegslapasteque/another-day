@@ -1,0 +1,17 @@
+{
+	"name": "goodBread",
+	"plugin-id": "Sprite",
+	"sid": 366555778864204,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "TweenGoodBread",
+			"sid": 230110505142722
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"spr_bread3"
+	]
+}

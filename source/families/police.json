@@ -1,0 +1,23 @@
+{
+	"name": "police",
+	"plugin-id": "Sprite",
+	"sid": 356434840738676,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 889983155289189
+		},
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 816199652574708
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"spr_lightRed",
+		"spr_lightBlue"
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "bedroom",
+	"plugin-id": "Sprite",
+	"sid": 445414392953839,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "blurhorizontal",
+			"name": "BlurHorizontal"
+		},
+		{
+			"effectId": "blurvertical",
+			"name": "BlurVertical"
+		}
+	],
+	"members": [
+		"spr_toFind1",
+		"spr_toFind2",
+		"spr_toFind3",
+		"spr_toFind4",
+		"spr_toFind5",
+		"spr_bedroom"
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"name": "spr_oldmanEyesClosed",
+	"plugin-id": "Sprite",
+	"sid": 557394111124968,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 892339285024898
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 461,
+						"height": 728,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9746681,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 383301722056340,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

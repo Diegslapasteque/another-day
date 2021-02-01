@@ -1,0 +1,37 @@
+{
+	"name": "spr_arrowLeft",
+	"plugin-id": "Sprite",
+	"sid": 248440971725923,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 599,
+						"height": 199,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2601529,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 252114132943167,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

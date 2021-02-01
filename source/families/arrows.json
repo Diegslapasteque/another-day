@@ -1,0 +1,20 @@
+{
+	"name": "arrows",
+	"plugin-id": "Sprite",
+	"sid": 944229018317502,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 755202059813808
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"spr_arrowUp",
+		"spr_arrowRight",
+		"spr_arrowLeft",
+		"spr_arrowDown"
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"name": "bg_grey",
+	"plugin-id": "TiledBg",
+	"sid": 797175944423841,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 942222731302261
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7173245,
+		"useCollisionPoly": true
+	}
+}

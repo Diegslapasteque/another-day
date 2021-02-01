@@ -1,0 +1,460 @@
+{
+	"name": "Scene2_events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "change_layout",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 479922020046492
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 155399392979724
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 595774128878210,
+					"parameters": {
+						"layer": "\"Black Screen\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 204773319523387
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "bg_black",
+					"sid": 894526582619862,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 399066035228961,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 317221690789211,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 696066579151328,
+					"parameters": {
+						"audio-file": "piano",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"piano\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 999813552384814,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "spr_oldmanEyesClosed",
+					"sid": 455173883278110,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "spr_oldman",
+					"sid": 286346097517716,
+					"parameters": {
+						"opacity": "100"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "spr_oldman",
+					"sid": 287905551131621,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "bg_abstract",
+					"sid": 279384741979720,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 126458901450121
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "bg_abstract",
+					"sid": 242834809119533,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "spr_title",
+					"sid": 270847685169645,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 822916278342946,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "bg_white",
+					"sid": 243869658861726,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "bg_white",
+					"sid": 560648019910325,
+					"parameters": {
+						"opacity": "100"
+					}
+				}
+			],
+			"sid": 447252153755501
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "bg_white",
+					"sid": 198517258332634,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 376232055137090,
+					"parameters": {
+						"layer": "\"Scene 2\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "tween-value",
+					"objectClass": "tween",
+					"sid": 261790908778392,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume\"",
+						"start-value": "-30",
+						"end-value": "5",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 998022974140036,
+					"parameters": {
+						"audio-file": "room",
+						"loop": "looping",
+						"volume": "tween.Tween.Value(\"volume\")",
+						"tag-optional": "\"room\""
+					}
+				}
+			],
+			"sid": 720779916424592
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "tween",
+					"sid": 711055593401439,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-volume",
+					"objectClass": "audio",
+					"sid": 804918615013020,
+					"parameters": {
+						"tag": "\"room\"",
+						"db": "tween.Tween.Value(\"volume\")"
+					}
+				}
+			],
+			"sid": 480712249411156
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "bg_white",
+					"sid": 725822569699386,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 795351261486055,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 149728254963879,
+					"parameters": {
+						"variable": "change_layout",
+						"value": "true"
+					}
+				},
+				{
+					"id": "tween-one-property",
+					"objectClass": "spr_handpostit",
+					"sid": 919629904768944,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"hand_rotate\"",
+						"property": "offsetAngle",
+						"end-value": "-10",
+						"time": "1.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "tween-two-properties",
+					"objectClass": "spr_handpostit",
+					"sid": 675813821859660,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"hand_move\"",
+						"property": "position",
+						"end-x": "702",
+						"end-y": "1344",
+						"time": "1.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "bg_grey",
+					"sid": 724597070646960,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "tween-value",
+					"objectClass": "spr_map",
+					"sid": 216966684161237,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"map_blur\"",
+						"start-value": "100",
+						"end-value": "0",
+						"time": "1.5",
+						"ease": "easeinsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 457204295139453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "spr_map",
+					"sid": 103238509828944,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"map_blur\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "spr_map",
+					"sid": 283094351680679,
+					"parameters": {
+						"effect": "\"BlurHorizontal\"",
+						"parameter-index": "0",
+						"value": "spr_map.Tween.Value(\"map_blur\")"
+					}
+				},
+				{
+					"id": "set-effect-parameter",
+					"objectClass": "spr_map",
+					"sid": 894675560059374,
+					"parameters": {
+						"effect": "\"BlurVertical\"",
+						"parameter-index": "0",
+						"value": "spr_map.Tween.Value(\"map_blur\")"
+					}
+				}
+			],
+			"sid": 779219191112922
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tweens-finished",
+					"objectClass": "spr_map",
+					"sid": 345694073731520,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"map_blur\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 436519438032760,
+					"parameters": {
+						"seconds": "5"
+					}
+				},
+				{
+					"id": "fade-volume",
+					"objectClass": "audio",
+					"sid": 945208613571033,
+					"parameters": {
+						"tag": "\"room\"",
+						"db": "-30",
+						"duration": "3",
+						"ending": "stop"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 377294949253966,
+					"parameters": {
+						"seconds": "1"
+					}
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "bg_black",
+					"sid": 462578004669384,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "2"
+					}
+				},
+				{
+					"id": "set-fade-out-time",
+					"objectClass": "bg_black",
+					"sid": 154377873723723,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-out-time": "0"
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "bg_black",
+					"sid": 937152955617119,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 252218246997007
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "bg_black",
+					"sid": 659902949532418,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 234014177882308,
+					"parameters": {
+						"variable": "change_layout"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop",
+					"objectClass": "audio",
+					"sid": 379671239462267,
+					"parameters": {
+						"tag": "\"room\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 605784391398958,
+					"parameters": {
+						"layout": "Scene3"
+					}
+				}
+			],
+			"sid": 736489225904007
+		}
+	],
+	"sid": 394456335477386
+}

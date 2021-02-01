@@ -1,0 +1,15 @@
+{
+	"name": "badBreads",
+	"plugin-id": "Sprite",
+	"sid": 830205880685904,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"spr_bread",
+		"spr_bread2",
+		"spr_bread4",
+		"spr_bread5",
+		"spr_bread6"
+	]
+}

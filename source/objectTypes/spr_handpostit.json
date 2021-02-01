@@ -1,0 +1,63 @@
+{
+	"name": "spr_handpostit",
+	"plugin-id": "Sprite",
+	"sid": 476337875016701,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 451711498858380
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1515,
+						"height": 928,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2463510,
+						"collisionPoly": {
+							"points": [
+								0.09966996699669967,
+								0.1627155172413793,
+								0.5,
+								0.2629310344827586,
+								0.6561056105610561,
+								0.5603448275862069,
+								0.634983498349835,
+								0.5,
+								0.9993399339933994,
+								0.9989224137931034,
+								0.5,
+								0.8459051724137931,
+								0.15577557755775578,
+								0.7446120689655172,
+								0.08844884488448845,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 500392301303058,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

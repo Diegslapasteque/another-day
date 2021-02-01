@@ -1,0 +1,21 @@
+{
+	"name": "bread",
+	"plugin-id": "Sprite",
+	"sid": 480291904019517,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "skymen_BetterOutline",
+			"name": "BetterOutline"
+		}
+	],
+	"members": [
+		"spr_bread5",
+		"spr_bread4",
+		"spr_bread3",
+		"spr_bread2",
+		"spr_bread",
+		"spr_bread6"
+	]
+}

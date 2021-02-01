@@ -1,0 +1,57 @@
+{
+	"name": "spr_lightBlue",
+	"plugin-id": "Sprite",
+	"sid": 437937793982104,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 1999,
+						"height": 1999,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6877771,
+						"collisionPoly": {
+							"points": [
+								0.2511255627813907,
+								0.2511255627813907,
+								0.5,
+								0.14757378689344672,
+								0.7493746873436719,
+								0.25012506253126565,
+								0.8514257128564282,
+								0.5,
+								0.7488744372186094,
+								0.7488744372186094,
+								0.5,
+								0.8524262131065533,
+								0.25012506253126565,
+								0.7493746873436719,
+								0.14757378689344672,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 296296331165880,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

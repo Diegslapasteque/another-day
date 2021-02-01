@@ -1,0 +1,57 @@
+{
+	"name": "spr_bread2",
+	"plugin-id": "Sprite",
+	"sid": 507644713816265,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 141,
+						"height": 113,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7887004,
+						"collisionPoly": {
+							"points": [
+								0.3265934065934066,
+								0,
+								0.8076923076923074,
+								0.005825242718446602,
+								1,
+								0.31470693994965837,
+								1,
+								0.6825242718446597,
+								0.723296703296703,
+								1,
+								0.36153846153846153,
+								1,
+								0,
+								0.7956250749131005,
+								0,
+								0.27864077669902904
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 408195871852501,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

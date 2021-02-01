@@ -1,0 +1,52 @@
+{
+	"name": "spr_refrigerator",
+	"plugin-id": "Sprite",
+	"sid": 820296904133914,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 982553822792331
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "blurhorizontal",
+			"name": "BlurHorizontal"
+		},
+		{
+			"effectId": "blurvertical",
+			"name": "BlurVertical"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 701,
+						"height": 1300,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5517517,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 615447850682743,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

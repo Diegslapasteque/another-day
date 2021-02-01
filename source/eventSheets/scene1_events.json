@@ -1,0 +1,356 @@
+{
+	"name": "Scene1_events",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "video_ready",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 647329525266650
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-playback-event",
+					"objectClass": "video_eyeOpen",
+					"sid": 108547335782597,
+					"parameters": {
+						"event": "can-play"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 422322411244001,
+					"parameters": {
+						"variable": "video_ready"
+					},
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-value",
+					"objectClass": "tween",
+					"sid": 118846711349130,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume\"",
+						"start-value": "-20",
+						"end-value": "10",
+						"time": "3",
+						"ease": "noease",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 913920951245714,
+					"parameters": {
+						"audio-file": "room",
+						"loop": "looping",
+						"volume": "tween.Tween.Value(\"volume\")",
+						"tag-optional": "\"room\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 608421740366315,
+					"parameters": {
+						"variable": "video_ready",
+						"value": "true"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 225276714388608,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "video_eyeOpen",
+					"sid": 659325009807849
+				},
+				{
+					"id": "set-looping",
+					"objectClass": "video_eyeOpen",
+					"sid": 860091627233334,
+					"parameters": {
+						"mode": "not-looping"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 814523510271510,
+					"parameters": {
+						"seconds": "0.1"
+					}
+				},
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 522252805756804,
+					"parameters": {
+						"layer": "\"Loading Screen\"",
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 738301531512374,
+					"parameters": {
+						"seconds": "3.7"
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "bedroom",
+					"sid": 920257956965377,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BlurHorizontal\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "bedroom",
+					"sid": 478336482285912,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"BlurVertical\""
+					}
+				}
+			],
+			"sid": 355192158203657
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 124201740845294,
+					"parameters": {
+						"interval-seconds": "10"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-one-property",
+					"objectClass": "childObjectsToFind",
+					"sid": 662653279931690,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"\"",
+						"property": "offsetOpacity",
+						"end-value": "30",
+						"time": "0.5",
+						"ease": "easeinoutsine",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "yes"
+					}
+				}
+			],
+			"sid": 478858281946187
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "mouse",
+					"sid": 982719252129392,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "childObjectsToFind"
+					}
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "video_eyeBlink",
+					"sid": 966162070728008,
+					"isInverted": true
+				},
+				{
+					"id": "is-playing",
+					"objectClass": "video_eyeOpen",
+					"sid": 841539975611394,
+					"isInverted": true
+				}
+			],
+			"actions": [
+				{
+					"id": "start-fade",
+					"objectClass": "childObjectsToFind",
+					"sid": 702459473990735,
+					"behaviorType": "Fade"
+				}
+			],
+			"sid": 940127836136301,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 960283239808354,
+							"parameters": {
+								"first-value": "childObjectsToFind.Count",
+								"comparison": 4,
+								"second-value": "1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "video_eyeBlink",
+							"sid": 485562127069937
+						},
+						{
+							"id": "set-looping",
+							"objectClass": "video_eyeBlink",
+							"sid": 526876775261391,
+							"parameters": {
+								"mode": "not-looping"
+							}
+						}
+					],
+					"sid": 571692173523889
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 506518904889656
+						}
+					],
+					"actions": [
+						{
+							"id": "play",
+							"objectClass": "video_eyeClose",
+							"sid": 462178172998463
+						},
+						{
+							"id": "set-looping",
+							"objectClass": "video_eyeClose",
+							"sid": 345495335260343,
+							"parameters": {
+								"mode": "not-looping"
+							}
+						},
+						{
+							"id": "tween-value",
+							"objectClass": "tween",
+							"sid": 231327854114605,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"volume volume_fade_out\"",
+								"start-value": "10",
+								"end-value": "-20",
+								"time": "3",
+								"ease": "noease",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 996491172430690
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "video_eyeClose",
+					"sid": 529973500002457
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 281693960718818,
+					"parameters": {
+						"layer": "\"Black Screen\"",
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 278876033062135,
+					"parameters": {
+						"seconds": "1.0"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "audio",
+					"sid": 618434590261321,
+					"parameters": {
+						"tag": "\"room\""
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 522408728011656,
+					"parameters": {
+						"layout": "Scene2"
+					}
+				}
+			],
+			"sid": 655534138962432
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "tween",
+					"sid": 868399261836997,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-volume",
+					"objectClass": "audio",
+					"sid": 841756954921246,
+					"parameters": {
+						"tag": "\"room\"",
+						"db": "tween.Tween.Value(\"volume\")"
+					}
+				}
+			],
+			"sid": 343227282094894
+		}
+	],
+	"sid": 861662928602359
+}

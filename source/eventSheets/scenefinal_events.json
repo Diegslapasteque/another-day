@@ -1,0 +1,124 @@
+{
+	"name": "SceneFinal_events",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 700744798868222
+				}
+			],
+			"actions": [
+				{
+					"id": "tween-value",
+					"objectClass": "tween",
+					"sid": 371484801867366,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume_fade_in\"",
+						"start-value": "-10",
+						"end-value": "0",
+						"time": "3",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "audio",
+					"sid": 267564748632437,
+					"parameters": {
+						"audio-file": "piano",
+						"loop": "not-looping",
+						"volume": "0",
+						"tag-optional": "\"piano\""
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 804064764220118,
+					"parameters": {
+						"seconds": "2"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "spr_title",
+					"sid": 690750799205931,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "spr_title",
+					"sid": 998296680104606,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 989192578358448
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "tween",
+					"sid": 693097797914364,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"volume_fade_in\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-volume",
+					"objectClass": "audio",
+					"sid": 613529049307022,
+					"parameters": {
+						"tag": "\"piano\"",
+						"db": "tween.Tween.Value(\"volume_fade_in\")"
+					}
+				}
+			],
+			"sid": 632992205966761
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-out-finished",
+					"objectClass": "spr_title",
+					"sid": 805977046668314,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 984873213882254,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 171699945330969,
+					"parameters": {
+						"layout": "Scene1"
+					}
+				}
+			],
+			"sid": 152714922312573
+		}
+	],
+	"sid": 259720324457300
+}

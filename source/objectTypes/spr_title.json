@@ -1,0 +1,68 @@
+{
+	"name": "spr_title",
+	"plugin-id": "Sprite",
+	"sid": 750141883816709,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 833780492459408
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "inverse",
+			"name": "Inverse"
+		}
+	],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 817,
+						"height": 340,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4969708,
+						"collisionPoly": {
+							"points": [
+								0.06976744186046512,
+								0.1676470588235294,
+								0.5,
+								0.13529411764705881,
+								0.9167686658506732,
+								0.19705882352941176,
+								0.9804161566707467,
+								0.5,
+								0.9510403916768666,
+								0.8823529411764706,
+								0.5,
+								0.538235294117647,
+								0.09791921664626684,
+								0.7617647058823529,
+								0.03549571603427173,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 150900418690245,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

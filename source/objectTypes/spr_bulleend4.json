@@ -1,0 +1,57 @@
+{
+	"name": "spr_bulleEnd4",
+	"plugin-id": "Sprite",
+	"sid": 755979678297145,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 662,
+						"height": 417,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8364364,
+						"collisionPoly": {
+							"points": [
+								0.12537764350453173,
+								0.19904076738609114,
+								0.5,
+								0.03836930455635491,
+								0.824773413897281,
+								0.27577937649880097,
+								0.9894259818731118,
+								0.5,
+								0.8398791540785498,
+								0.7458033573141487,
+								0.5,
+								0.9616306954436451,
+								0.1148036253776435,
+								0.815347721822542,
+								0.012084592145015106,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 391714388979612,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 0
+			}
+		],
+		"subfolders": []
+	}
+}

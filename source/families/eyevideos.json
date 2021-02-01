@@ -1,0 +1,22 @@
+{
+	"name": "eyeVideos",
+	"plugin-id": "video",
+	"sid": 183477885786339,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "inverse",
+			"name": "Inverse"
+		},
+		{
+			"effectId": "multiply",
+			"name": "Multiply"
+		}
+	],
+	"members": [
+		"video_eyeOpen",
+		"video_eyeBlink",
+		"video_eyeClose"
+	]
+}
